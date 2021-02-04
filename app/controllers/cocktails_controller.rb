@@ -27,6 +27,10 @@ class CocktailsController < ApplicationController
     redirect_to root_path
   end
 
+  def home
+    @cocktails = Cocktail.all
+  end
+
   private
 
   def cocktail_params

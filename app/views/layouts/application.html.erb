@@ -15,7 +15,7 @@
   <body>
     <nav class="nav d-flex">
       <h1 class="mr-auto"><%= link_to "fancy mead", root_path, class: 'card-link' %></h1>
-      <p class="nav-link"><%= link_to "All cocktails", root_path, class: 'card-link' %></p>
+      <p class="nav-link"><%= link_to "All cocktails", cocktails_path, class: 'card-link' %></p>
       <p class="nav-link"><%= link_to "New cocktail", new_cocktail_path, class: 'card-link' %></p>
     </nav>
     <%= yield %>
