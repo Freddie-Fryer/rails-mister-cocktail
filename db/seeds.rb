@@ -8,11 +8,11 @@
 require 'json'
 require 'open-uri'
 
-# file = open('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
-# ingredients_hash = JSON.parse(file.read)
-# ingredients_hash['drinks'].each do |i|
-#   ingredient = Ingredient.create(name: i['strIngredient1'])
-# end
+file = open('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
+ingredients_hash = JSON.parse(file.read)
+ingredients_hash['drinks'].each do |i|
+  ingredient = Ingredient.create(name: i['strIngredient1'])
+end
 
 48.times do
   Cocktail.create(name: Faker::FunnyName.two_word_name)
