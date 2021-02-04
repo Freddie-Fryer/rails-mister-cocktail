@@ -5,23 +5,23 @@
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
+    <div class="carousel-item active">
       <% cocktail_1 = @cocktails.sample %>
-      <img src="https://miro.medium.com/max/10020/0*pVTtTdJA65mVudPx" class="d-block w-100" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5><%= link_to cocktail_1.name, cocktail_path(cocktail_1), class: 'card-link' %></h5>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item">
       <% cocktail_2 = @cocktails.sample %>
-      <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/15/38/1442432590-delish-halloween-cocktails-sweet-poison.png" class="d-block w-100" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5><%= link_to cocktail_2.name, cocktail_path(cocktail_2), class: 'card-link' %></h5>
       </div>
     </div>
     <div class="carousel-item">
       <% cocktail_3 = @cocktails.sample %>
-      <img src="https://www.thespruceeats.com/thmb/8w9Zmdiva5L23O_HJhjgYC-jKEU=/1365x1365/smart/filters:no_upscale()/tequila-sunrise-recipe-760754-19_preview-5b02f856119fa80037651942.jpeg" class="d-block w-100" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5><%= link_to cocktail_3.name, cocktail_path(cocktail_3), class: 'card-link' %></h5>
       </div>

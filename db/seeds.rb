@@ -13,3 +13,14 @@ ingredients_hash = JSON.parse(file.read)
 ingredients_hash['drinks'].each do |i|
   ingredient = Ingredient.create(name: i['strIngredient1'])
 end
+
+48.times do
+  Cocktail.create(name: Faker::FunnyName.two_word_name)
+end
+
+# Update seed file (3x cocktails)
+# test seed
+# test it first
+# push to git
+# push to heroku
+# heroku run rake db:seed
