@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>fancy mead</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,12 +13,10 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <p>Fancy Mead</p>
-      <p class="nav-link"><%= link_to "All cocktails", cocktails_path, class: 'card-link' %></p>
+    <nav class="nav d-flex">
+      <h1 class="mr-auto"><%= link_to "fancy mead", root_path, class: 'card-link' %></h1>
+      <p class="nav-link"><%= link_to "All cocktails", root_path, class: 'card-link' %></p>
       <p class="nav-link"><%= link_to "New cocktail", new_cocktail_path, class: 'card-link' %></p>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </nav>
     <%= yield %>
   </body>
