@@ -1,12 +1,16 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  background-color: $base;
+  font-family: 'Arvo', serif;
+  align-items: center;
+  color: $white;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar h1 {
+  font-family: 'Arvo', serif;
+  color: red;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-link {
+  text-decoration: none; 
 }

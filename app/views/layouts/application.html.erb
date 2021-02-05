@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>fancy mead</title>
+    <title>Fancy Mead</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
   <body>
-    <nav class="nav d-flex">
-      <h1 class="mr-auto"><%= link_to "fancy mead", root_path, class: 'card-link' %></h1>
-      <p class="nav-link"><%= link_to "All cocktails", cocktails_path, class: 'card-link' %></p>
-      <p class="nav-link"><%= link_to "New cocktail", new_cocktail_path, class: 'card-link' %></p>
+    <nav class="navbar fixed-top">
+      <h1 class="mr-auto"><%= link_to "Fancy Mead", root_path, class: 'card-link' %></h1>
+      <button type="button" class="my_button"><%= link_to "All cocktails", cocktails_path %></button>
+      <button type="button" class="my_button"><%= link_to "New cocktail", new_cocktail_path %></button>
     </nav>
     <%= yield %>
   </body>
