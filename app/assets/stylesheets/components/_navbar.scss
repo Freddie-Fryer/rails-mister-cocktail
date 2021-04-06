@@ -4,6 +4,7 @@
   font-family: 'Arvo', serif;
   align-items: center;
   color: $white;
+  text-decoration: none;
 }
 
 .navbar h1 {
@@ -11,6 +12,6 @@
   color: red;
 }
 
-.nav-link {
+.nav-link a {
   text-decoration: none; 
 }
